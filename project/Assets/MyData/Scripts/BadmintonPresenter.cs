@@ -11,7 +11,7 @@ public class BadmintonPresenter : MonoBehaviour
     private BadmintonModel _badModel;
     private ControllerModel _controllerModel;
     private BadmintonView _badView;
-    // Start is called before the first frame update
+    
     void Start()
     {
         _badModel = new BadmintonModel(_shuttle, _racket);
@@ -25,7 +25,6 @@ public class BadmintonPresenter : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
